@@ -1,0 +1,80 @@
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#121212,#212b46)
+}
+
+.title{
+    font-size: 85wpx;
+    color:aliceblue;
+    animation: flilTitle 2s;
+    margin-bottom: 10px;
+}
+
+.containerInput{
+ 
+   background-color: rgb(255, 255, 255,0.2);
+   padding: 15px;
+   display: flex;
+   border-radius: 8px;
+   box-shadow: 1px 8px 18px #000;
+}
+.containerInput input{
+ 
+   background-color: transparent;
+   border: 0;
+   font-size: 20px;
+   color:#fff;
+   /* tirar o selecionar branco */
+   outline: none;
+   margin-right: 8px;
+
+ }
+ .containerInput input::placeholder{
+ color: #fff;
+    
+  }
+  .buttonSearch{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition:  transform 0.5s;
+    
+  }
+  .buttonSearch:hover{
+    transform: scale(1.2);
+  }
+  .main{
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 500px;
+    margin-top: 20px;
+
+  }
+  .main li{
+  margin-bottom: 15px;
+  font-weight: bold;
+  list-style: none;
+  }
+  .main h2{
+    font-size: 39px;
+    margin:16px 0
+    }
+
+
+@keyframes flilTitle {
+    /* comeca rotacionando do eixo x 90deg ate 0 deg */
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
